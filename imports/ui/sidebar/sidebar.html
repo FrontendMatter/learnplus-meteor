@@ -1,0 +1,19 @@
+<template name="Sidebar">
+  <div class="sidebar-heading">APPLICATIONS</div>
+  <ul class="sidebar-menu sm-active-button-bg">
+    <li class="sidebar-menu-item{{ activeClass 'student-dashboard' }}">
+      {{#linkTo 
+        route="student-dashboard"
+        class="sidebar-menu-button" }}
+        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i> Student
+      {{/linkTo}}
+    </li>
+    <li class="sidebar-menu-item{{ activeClass 'instructor-dashboard' }}">
+      {{#linkTo 
+        route="instructor-dashboard"
+        class="sidebar-menu-button" }}
+        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">school</i> Instructor
+      {{/linkTo}}
+    </li>
+  </ul>
+</template>
